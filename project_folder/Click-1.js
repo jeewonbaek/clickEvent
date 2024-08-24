@@ -23,6 +23,8 @@ function changeToRed () {
 
 }
 
+changeToRed();
+
 function evenToRed () {
 
 for (let i = 0; i < evenNumber.length; i++) {
@@ -34,6 +36,9 @@ for (let i = 0; i < evenNumber.length; i++) {
 // function 만들었으니, 이제 호출하면 작용하지 않을까?
 
 evenToRed();
+// 왜 안되지? 위에 changeToRed 펑션 호출 안해서???
+// 그럼 다시 올라가서 호출 해야지~
+// 스트레스 받지 말자 허허허허 이거슨 재밌ㄴ느 작업이다!~~~
 
 // 아니 왜 branch 새로 팠다고 파일이 다 이동해???????????????????????
 
