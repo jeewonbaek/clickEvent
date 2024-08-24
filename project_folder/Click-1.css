@@ -1,0 +1,14 @@
+
+div > button {
+  background-color: cornflowerblue;
+  font-style: oblique;
+  size: 100px; 
+  /* 버튼 크기 키우려고 size 조정 했는데, 적용이 안되는거 보니, flex나 position 이용해서 버튼 박스 크기 조종해야 겠군... */
+}
+
+section > button {
+  background-color: darkgoldenrod;
+  font-style: oblique;
+}
+
+/* how to size up the button box?
