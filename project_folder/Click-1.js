@@ -3,19 +3,18 @@
 // div -> 짝수(evenNumber)
 // section -> 홀수(oddNumber)
 
-let evenNumber = document.getElementById('even');
-let oddNumber = document.getElementsById('odd');
+let evenNumber = document.getElementById('even').getElementsByTagName('button');
+let oddNumber = document.getElementsById('odd').getElementsByTagName('button');
 
-function evenNumberToRed () {
-  evenNumber.addEventListener("click",onclick,false);
-  background-color : red;
+// param 값에 even이나 odd 가 들어오면 if문 ===even 이런 식으로 일치하면 red ===odd 면 blue 두가지 기능을 하는 펑션도 만들어보기. red 용, blue 용 따로 만드는거보다 이게 더 효율적이지 않나?,,,
 
-}
-// 완전 엉터리..GPT 사용해서 배우기
 
-// mdn 예시
-const el = document.getElementById("outside");
-el.addEventListener("click", modifyText, false);
+// function evenNumberToRed () {
+//   evenNumber.addEventListener("click",onclick,false);
+//   background-color : red;
+
+// }
+// // 완전 엉터리..GPT 사용해서 배우기
 
 
 
