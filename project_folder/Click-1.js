@@ -3,8 +3,8 @@
 // div -> 짝수(evenNumber)
 // section -> 홀수(oddNumber)
 
-let evenNumber = document.getElementsByTagName('div');
-let oddNumber = document.getElementsByTagName('section');
+let evenNumber = document.getElementById('even');
+let oddNumber = document.getElementsById('odd');
 
 function evenNumberToRed () {
   evenNumber.addEventListener("click",onclick,false);
@@ -20,3 +20,5 @@ el.addEventListener("click", modifyText, false);
 
 
 // 아니 왜 branch 새로 팠다고 파일이 다 이동해???????????????????????
+
+
