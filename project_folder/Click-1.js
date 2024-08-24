@@ -3,10 +3,10 @@
 // div -> 짝수(evenNumber)
 // section -> 홀수(oddNumber)
 
+let evenNumber = document.getElementsByTagName('div');
 let oddNumber = document.getElementsByTagName('section');
 
 function evenNumberToRed () {
-let evenNumber = document.getElementsByTagName('div');
   evenNumber.addEventListener("click",onclick,false);
   background-color : red;
 
