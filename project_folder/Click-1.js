@@ -15,9 +15,9 @@ let oddNumber = document.getElementById('odd').getElementsByTagName('button');
 
 
 
-function onlyEvenToRed (evenNumber) {
-  document.body.style.backgroundColor = 'red';
-}
+// function onlyEvenToRed (evenNumber) {
+//   document.body.style.backgroundColor = 'red';
+// }
 
 // onlyEvenToRed();
 // 왜 클릭하지도 않았는데 키자마자 red로 되지?...
@@ -32,6 +32,24 @@ function onlyEvenToRed (evenNumber) {
 
 
 
+
+
+//  evenNumber[i].addEventListener('click',function() { 처럼, click 옆에 아무 의미 없더라도 function()를 썼어야 했어!...
+function onlyEvenToRed () {
+  for (let i = 0; i < evenNumber.length; i++) {
+  evenNumber[i].addEventListener('click',function() {
+    document.body.style.backgroundColor = 'red';
+    });
+  }
+}
+
+// onlyEvenToRed();
+ // 요렇게만 호출하면 펑션 내용 그대로 작용 
+// 소괄호 안에 odd 를 넣눈다면?
+
+onlyEvenToRed(oddNumber); 
+// 으잉 odd 넣어도 even 만 red로 되네?,,,, 
+// 진짜 param 값은 의미가 없나................
 
 
 
