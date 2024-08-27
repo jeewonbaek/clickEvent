@@ -9,42 +9,35 @@ let oddNumber = document.getElementById('odd').getElementsByTagName('button');
 
 
 // param 값에 even이나 odd 가 들어오면 if문 ===even 이런 식으로 일치하면 red ===odd 면 blue 두가지 기능을 하는 펑션도 만들어보기. red 용, blue 용 따로 만드는거보다 이게 더 효율적이지 않나?,,,
+// 나의 추리로는, 만약 even과 odd 가 클릭될 시 나오는 칼라를 뒤바꾸고 싶을 때 유동적으로 쓸 수 있는 것은 red 와 blue 기능의 함수를 따로 만들고, param 값에 무엇이 들어가느냐에 따라 해당 기능이 발동되는 것이 좀 더 편리하다. 그리고 param 값에 even 이나 odd 라고 특정 param 값을 박아버리면 나중에 일일이 수정을 해야하며, 만약 even 에서 evenddddd 로 이름을 변경하게 되면, 해당 펑션으로 다시 가 param 에 쓰여진 기존 even이란 이름도 evenddd로 변경 해줘야 한다. 비효율적. 그래도 비효율 적인 펑션도 함 만들어 보자!
 
-// 아래는 잘못된 코드.... 하지만 시도는 좋았다 낄낄.
-// function evenNumberToRed () {
-//   evenNumber.addEventListener("click",onclick,false);
-//   background-color : red;
+
+
+
+
+
+
+
+
+
+
+
+
+// function changeToRed () {
+//   document.body.style.backgroundColor = 'red';
+
 
 // }
-// // 완전 엉터리..GPT 사용해서 배우기
-
-function changeToRed () {
-  document.body.style.backgroundColor = 'red';
-  // document.html.style.backgroundColor = 'red'; // 실험 . 궁금해
-  // 의사 코드 : 나는 버튼을 누르면 
-
-}
 
 
-// changeToRed();
-// changeToRed() 함수가 직접 호출되었는데, 이 함수는 버튼 클릭 시 배경색을 변경하도록 설계되었습니다. 그러나 페이지 로드 시점에 changeToRed()가 호출되면 페이지가 로드되자마자 배경색이 빨간색으로 변경됩니다.
 
-function evenToRed () {
+// function evenToRed () {
 
-for (let i = 0; i < evenNumber.length; i++) {
-  evenNumber[i].addEventListener('click', changeToRed);
-}
+// for (let i = 0; i < evenNumber.length; i++) {
+//   evenNumber[i].addEventListener('click', changeToRed);
+// }
 
-}
+// }
 
-// function 만들었으니, 이제 호출하면 작용하지 않을까?
-evenToRed();
-// 왜 안되지? 위에 changeToRed 펑션 호출 안해서???
-// 그럼 다시 올라가서 호출 해야지~
-// 스트레스 받지 말자 허허허허 이거슨 재밌ㄴ느 작업이다!~~~
-
-// 오~ 그래도 안된다. html 에 js 파일도 잘 연동 됐는데... gpt질문 꼬!
-
-// 아니 왜 branch 새로 팠다고 파일이 다 이동해???????????????????????
-
+// evenToRed();
 
