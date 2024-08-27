@@ -26,6 +26,10 @@ function onlyEvenToRed (evenNumber) {
 // onlyEvenToRed(evenNumber);
 // onlyEvenToRed(); 이거를 하나 onlyEvenToRed(evenNumber); 이거를 하나 결과는 똑같네?
 // param 에 대해 자세히 알아봐여 갰다. param 값이 들어가야먄! 이 아니라, 그냥 호출해도 되지만, param 값이 들어가도 된다 이런느낌인다?
+// 어 그러면 param 값에 oddnumber 가 들어가면 어케 되지?
+// onlyEvenToRed(oddNumber);
+// 는 여전함. param 값은 쥐뿔도 연관 없다는 건가...
+
 
 
 
