@@ -50,11 +50,25 @@ console.log(hehe);
 // console.log(num); 
 
 // 왜 숫자나 qw 가 안찍히지?>>> 맨 위애 처럼 되야 하지 안ㄹ나???
-// 이유 : whatif() 하고 계속 찍어내니까 값이 잘 안나옴 하나하나 콘솔 찍으면 잘 나옴
 // 근데 so/hehe/num 전부 다른 변수명인데 사용한 함수가 같다는 이유로 작동이 안된다고?....
 // GPT야 도와줘!~
+// 정답 : 스크립트 언어라서, 아래 껏들 ( hehe num) 암만 잘 써도 , 가장 먼저 읽히는 so 가 오류나면 나머지 실행 중단됨, 오류 빨리 찾기 위해 만들어진 거라네....
+// 근데 함수는 순서에 구애받지 않음. 호이스팅 hoisting 이라는 매커니즘 덕분. 코드 내 어디서든 호출 가능~
 
 
 
 
 
+// gpt 질문 용~
+function whatIf (q,w) {
+  return q+w;
+}
+
+var so = whatIf(q,w); 
+console.log(so); // ReferenceError: q is not defined
+
+var hehe = whatIf("q","w"); // ReferenceError: q is not defined
+console.log(hehe);
+
+var num = whatIf(1,2); // ReferenceError: q is not defined
+console.log(num); 
