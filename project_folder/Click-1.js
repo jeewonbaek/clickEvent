@@ -15,10 +15,17 @@ let oddNumber = document.getElementById('odd').getElementsByTagName('button');
 
 
 
+function onlyEvenToRed (evenNumber) {
+  document.body.style.backgroundColor = 'red';
+}
 
-
-
-
+// onlyEvenToRed();
+// 왜 클릭하지도 않았는데 키자마자 red로 되지?...
+// 클릭이벤트는 안널고, 백그라운드 칼라만 바꾸는 주문이라서!
+// 근데 왜 () 안에 evennumber 쓰지도 않았는데, 왜 적용되지?.,
+// onlyEvenToRed(evenNumber);
+// onlyEvenToRed(); 이거를 하나 onlyEvenToRed(evenNumber); 이거를 하나 결과는 똑같네?
+// param 에 대해 자세히 알아봐여 갰다. param 값이 들어가야먄! 이 아니라, 그냥 호출해도 되지만, param 값이 들어가도 된다 이런느낌인다?
 
 
 
