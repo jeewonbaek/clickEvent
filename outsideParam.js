@@ -1,8 +1,9 @@
 
-// test 1 : 임시 param과 함수 내부의 param 이름이 같은 경우.
+// 실험 : 임시 param과 함수 내부의 param 이름이 같은 경우.
 
 let test1 = 10; // 여기서 test1 은 number형
-let test2 = "테스트2임"
+let test2 = "테스트2임";
+let test3; // 선언만 하고 값은 안줘보기
 
 function testing (test1) { // 여기서 test1 은 parameter / any
 
@@ -15,8 +16,8 @@ function testing (test1) { // 여기서 test1 은 parameter / any
 }
 
 let testing1 = testing(test1); // 여기서 test1 은 number형
-
-console.log(testing1);
+console.log(testing(test1)); // 테스트1임
+console.log(testing1); // testing1 속성이 왜 any지??? return test1 으로 인해 string이 되어야 하지 않나?
 // 예상 : "테스트1임" -> 함수 안에 리턴값이 "테스트1임" 이라고 선언 되었기 때문
 // 결과 : 테스트1임
 console.log(testing(700));
@@ -28,8 +29,8 @@ console.log(testing(test2));
 
 // 결론 : param 값에 데이터타입에 실제값 아무거나 들어가면 전부 return "테스트1임" 됨.
 
-
-
+console.log(testing(test3)); // 테스트1임 (아니.. undefined 인데도 param 으로 쳐준다고?)
+console.log(test3); // undefined
 
 
 
