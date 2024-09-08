@@ -43,3 +43,15 @@ function cTest (parameter) {
 
 console.log("cTest 함수 외부의 c 값은:",c); // cTest 함수 외부의 c 값은: 44  // 왜 위에 aTest 에서는 순서대로 값이 터미널에 찍혔는데 왜 얘는 순서가 첫번째로 찍혔지?
 console.log("cTest 함수에 c라는 param 값을 넣은 값은 :",cTest(c)); // cTest 함수에 c라는 param 값을 넣은 값은 : 50
+
+//////////////////////////////
+
+var wood = 1;
+console.log(wood); // 1
+
+var wood = 1;
+console.log(wood); // 1
+
+let tree = 2;
+console.log(tree); // 2
+// let tree = 2; // 바로 에러~
