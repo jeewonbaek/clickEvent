@@ -51,4 +51,37 @@ console.log(e);
 
 //? 뭐 펑션 안에서는 그냥 "변수명=값;" 만 적어도 와일드카드(*) 처럼 무적으로 싹다 값 변화시키는 거임???
 
-// gpt 정담 : 
+// gpt 정담 : 헐...var만 전역/함수 이어지게 재할당 가능한거네... 근데 왜 속성이 계속 string 이야?
+
+
+
+
+// let , const(재선,재할 불가능하니 에러 뜨지 않나?) 으로 같은 함수 테스트. const는 재할당 안되는데 함수 내에서 그냥 e=100; 하면 예외로 재할당 해주나?,, 그럼 무슨 의미가 있남...
+// 함수 작성만 하고 호출 말고 걍 e 찍어보기
+// let과 var의 차이: let과 const는 블록 스코프를 따르기 때문에 함수나 블록 내에서만 유효합니다. 그러나 var는 함수 스코프를 따르고, 함수 내부가 아닌 곳에서 선언된 경우 전역 스코프에 영향을 미칩니다. -> let,const는 전역이랑 함수 내부랑 분리돼서 값이 변하고 하지 않고 , var는 영행을\\\영행영향을 다받는다? 블록 스코프 머시기 뭔말이야
+
+
+hahahaahaha = 1;
+console.log(hahahaahaha); // 1 
+// 뭐지.,,, 전역에서도 var let con 없이 선언이 가능해....
+hahahaahaha = 60; 
+console.log(hahahaahaha); // 60
+// 재할당 까지...
+
+var lol;
+console.log(lol); // undefined
+
+hehehehehehe;
+console.log(hehehehehehe); // 이거는 hehehehehehe is not defined
+
+//! 그러니까, var let const 없이 선언만 하는건 안되고, 선언+할당 은 된다?..뭔 그지같은...왜 굳이? 이유가 머야., 
+
+kkk;
+console.log(kkk); // kkk is not defined
+
+const kkk = 1;
+console.log(kkk); // 1
+
+kkk =199;
+console.log(kkk); // Assignment to constant variable.
+
